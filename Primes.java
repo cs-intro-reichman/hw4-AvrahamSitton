@@ -1,6 +1,8 @@
 public class Primes {
     public static void main(String[] args) {
         int x = Integer.parseInt(args[0]);
+        System.out.println("Prime numbers up to " + x + ":");
+
         primeFilter(x);
 
     }
@@ -28,7 +30,8 @@ public class Primes {
         }
         System.out
                 .println(
-                        "There are " + cunt + " prime numbers between 2 and " + x + ". (" + (int) (cunt*1.0/x * 100.0) + "% are primes)");
+                        "There are " + cunt + " primes between 2 and " + x + " (" + (int) (cunt * 1.0 / x * 100.0)
+                                + "% are primes)");
     }
 
 }
